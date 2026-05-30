@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoCrypt — Acoustic P2P</title>
+  <meta name="description" content="Secure peer-to-peer communication over sound" />
+  <style>
+    body { margin: 0; padding: 0; background: #F7F6F3; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // Pre-declare the ggwave stdout hook.
+    // AppNew.jsx replaces this with a real handler after React mounts.
+    window.__ggwaveOnPrint = null;
+  </script>
+  <script src="ggwave.js"></script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
